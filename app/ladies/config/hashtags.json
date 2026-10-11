@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "target_count": 10,
+  "min_count": 8,
+  "max_count": 12,
+  "common": ["ヘアコンサルティング", "似合わせカット"],
+  "by_category": {
+    "short": ["ショート", "ショートボブ"],
+    "one_color": ["透明感カラー", "艶カラー"],
+    "mens": ["メンズヘア", "メンズカット"]
+  }
+}

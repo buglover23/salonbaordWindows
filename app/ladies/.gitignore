@@ -1,0 +1,16 @@
+node_modules/
+.env
+# Runtime output lives only at the repository root; same-named folders elsewhere (e.g. tests/fixtures/images/) stay tracked.
+/dist/
+/data/
+/images/
+/logs/
+/dry-run/
+# Google Trends exports placed by the operator (references/trends/README.md stays tracked)
+/references/trends/*.csv
+# Plan 3: extension builds, the live submit-intent ledger (the dry-run one is under /dry-run/)
+/apps/extension/dist/
+/apps/extension/dist-e2e/
+/ledger/
+# The owner's trend workbooks (the weekly list and the hand-kept words) at the data root
+/トレンド語/

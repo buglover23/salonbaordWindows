@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+# Mac edition: bash scripts and text stay LF on every checkout (the executable bit is kept in the index).
+layout/mac/** text eol=lf

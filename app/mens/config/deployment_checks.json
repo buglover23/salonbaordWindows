@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "automation": {
+    "status": "unknown",
+    "evidence": null,
+    "checked_at": null
+  },
+  "posting_limits": {
+    "style": {
+      "daily": {
+        "status": "unknown"
+      },
+      "monthly": {
+        "status": "unknown"
+      },
+      "total": {
+        "status": "unknown"
+      },
+      "image_capacity": {
+        "status": "unknown"
+      },
+      "current_count": null,
+      "counted_at": null,
+      "quota_period_boundary": null
+    },
+    "blog": {
+      "daily": {
+        "status": "unknown"
+      },
+      "monthly": {
+        "status": "unknown"
+      },
+      "total": {
+        "status": "unknown"
+      },
+      "image_capacity": {
+        "status": "unknown"
+      },
+      "current_count": null,
+      "counted_at": null,
+      "quota_period_boundary": null
+    }
+  },
+  "page_routes_verified": {
+    "style": {
+      "mens": false,
+      "ladies": false
+    },
+    "blog": {
+      "mens": false,
+      "ladies": false
+    }
+  },
+  "authentication": {
+    "checked_at": null,
+    "mfa_mode": null,
+    "session_expiry_policy": null
+  }
+}

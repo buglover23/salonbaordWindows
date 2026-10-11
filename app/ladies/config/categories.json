@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "style_categories": [
+    {
+      "id": "hair_quality_color",
+      "label": "髪質改善カラー",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["髪質改善カラー", "艶カラー", "透明感カラー"],
+      "template_categories": ["hair_quality_color"],
+      "requires_verified_menu": true,
+      "verified_terms": ["髪質改善", "髪質改善カラー"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "hair_quality",
+      "label": "髪質改善",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["髪質改善", "髪質改善トリートメント", "艶髪"],
+      "template_categories": ["hair_quality"],
+      "requires_verified_menu": true,
+      "verified_terms": ["髪質改善"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "short",
+      "label": "ショート・ボブ",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ショート", "ショートボブ", "ボブ"],
+      "template_categories": ["short_bob"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "one_color",
+      "label": "ワンカラー",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ワンカラー", "透明感カラー"],
+      "template_categories": ["one_color"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "inner_earring_color",
+      "label": "インナー・イヤリングカラー",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["インナーカラー", "イヤリングカラー"],
+      "template_categories": ["inner_earring_color"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "bleach_color",
+      "label": "ブリーチカラー",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ブリーチカラー", "ハイトーン", "ダブルカラー"],
+      "template_categories": ["bleach_color"],
+      "requires_verified_menu": true,
+      "verified_terms": ["ブリーチ", "ブリーチカラー"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "no_bleach_color",
+      "label": "ブリーチなしカラー",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ブリーチなし", "ブリーチなしカラー", "ノーブリーチ", "ノーブリーチカラー", "ノンブリーチ", "ノンブリーチカラー", "ブリーチ無し", "ブリーチ不要", "ブリーチレス"],
+      "template_categories": ["no_bleach_color"],
+      "requires_verified_menu": true,
+      "verified_terms": ["ブリーチなし"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "korean_style",
+      "label": "韓国風スタイル",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["韓国風", "韓国ヘア", "ヨシンモリ"],
+      "template_categories": ["korean_style"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "highlight",
+      "label": "ハイライト",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ハイライト"],
+      "template_categories": ["highlight_young", "highlight_gray"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "gray_coverage",
+      "label": "白髪染め",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["白髪染め"],
+      "template_categories": ["highlight_gray"],
+      "requires_verified_menu": true,
+      "verified_terms": ["白髪染め"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "gray_blending",
+      "label": "白髪ぼかし",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["白髪ぼかし"],
+      "template_categories": ["highlight_gray"],
+      "requires_verified_menu": true,
+      "verified_terms": ["白髪ぼかし"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "extensions",
+      "label": "エクステ",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["エクステ"],
+      "template_categories": ["extensions"],
+      "requires_verified_menu": true,
+      "verified_terms": ["エクステ"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "perm",
+      "label": "パーマ",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["パーマ", "デジタルパーマ"],
+      "template_categories": ["perm"],
+      "requires_verified_menu": true,
+      "verified_terms": ["パーマ"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "hair_set",
+      "label": "ヘアセット",
+      "audiences": ["ladies"],
+      "allowed_keywords": ["ヘアセット", "ヘアアレンジ", "お呼ばれ"],
+      "template_categories": ["hair_set"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "two_block",
+      "label": "ツーブロック",
+      "audiences": ["mens"],
+      "allowed_keywords": ["ツーブロック"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "fade",
+      "label": "フェード",
+      "audiences": ["mens"],
+      "allowed_keywords": ["フェード", "フェードカット", "スキンフェード"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "mash",
+      "label": "マッシュ",
+      "audiences": ["mens"],
+      "allowed_keywords": ["マッシュ", "マッシュウルフ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "center_part",
+      "label": "センターパート",
+      "audiences": ["mens"],
+      "allowed_keywords": ["センターパート"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "mens_perm",
+      "label": "メンズパーマ",
+      "audiences": ["mens"],
+      "allowed_keywords": ["メンズパーマ", "ニュアンスパーマ", "波巻きパーマ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": true,
+      "verified_terms": ["パーマ", "メンズパーマ"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "twist",
+      "label": "ツイスト",
+      "audiences": ["mens"],
+      "allowed_keywords": ["ツイスト", "ツイストパーマ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": true,
+      "verified_terms": ["ツイスト", "パーマ"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "twist_spiral",
+      "label": "ツイストスパイラル",
+      "audiences": ["mens"],
+      "allowed_keywords": ["ツイストスパイラル", "ツイスパ", "ツイストスパイラルパーマ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": true,
+      "verified_terms": ["ツイスト", "スパイラル", "パーマ"],
+      "salonboard_option_value": null
+    },
+    {
+      "id": "business",
+      "label": "ビジネス",
+      "audiences": ["mens"],
+      "allowed_keywords": ["ビジネス", "清潔感"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "clipped",
+      "label": "刈り上げ",
+      "audiences": ["mens"],
+      "allowed_keywords": ["刈り上げ", "刈上げ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "korean_mens",
+      "label": "韓国風メンズ",
+      "audiences": ["mens"],
+      "allowed_keywords": ["韓国風", "韓国マッシュ"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "up_bang",
+      "label": "アップバング",
+      "audiences": ["mens"],
+      "allowed_keywords": ["アップバング"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    },
+    {
+      "id": "mens_trend",
+      "label": "その他トレンドスタイル",
+      "audiences": ["mens"],
+      "allowed_keywords": ["トレンド"],
+      "template_categories": ["mens"],
+      "requires_verified_menu": false,
+      "salonboard_option_value": null
+    }
+  ],
+  "blog_categories": []
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "language": "ja",
+  "tone": "自然で親しみやすい美容サロンの丁寧な文章",
+  "conversion_goal": "自然な相談・来店への関心",
+  "diversity": {
+    "sentence_lookback": 5,
+    "pattern_lookback": 3,
+    "avoid_synonym_only_rewrites": true
+  },
+  "include_hair_consulting": true,
+  "use_season_if_relevant": true,
+  "avoid_keyword_stuffing": true,
+  "avoid_unverified_claims": true,
+  "style_comment_sections": ["特徴", "おすすめの人", "見え方のメリット", "お手入れ", "相談案内"],
+  "blog_sections": ["導入", "スタイル解説", "似合わせ提案", "お手入れ", "相談案内"],
+  "bookmark_cta_enabled": true,
+  "bookmark_cta_variants": [
+    "気になるスタイルはブックマークして、次回のご相談にお役立てください。",
+    "カウンセリングの際にこちらの画像をお見せいただくと、ご希望を共有しやすくなります。"
+  ],
+  "allowed_urls": [],
+  "hashtag_placement": "append_to_primary_text",
+  "default_limits": {
+    "count_unit": "grapheme",
+    "style": { "title": 30, "stylist_comment": 120, "menu_text": 50 },
+    "blog": { "title": 25, "body": 1000, "body_max_newlines": 80 }
+  }
+}

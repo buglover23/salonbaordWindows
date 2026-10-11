@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "file_path": "C:\\Users\\（ユーザー名）\\Documents\\テンプレート.xlsx",
+  "sheet_mappings": [
+    {
+      "sheet_name": "最新トレンド",
+      "header_row": 2,
+      "category": "trend",
+      "audiences": ["ladies", "mens"],
+      "kind": "trend_words",
+      "columns": { "group": "A", "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O", "Q", "S", "U"], "ignore": ["E"] }
+    },
+    {
+      "sheet_name": "1000pv超えスタイルタイトル(レディース)",
+      "header_row": 1,
+      "category": "top_titles_ladies",
+      "audiences": ["ladies"],
+      "kind": "top_titles",
+      "columns": { "title": "A", "comment": "B", "length": "D", "menu": "E", "hashtags": ["F"], "ignore": ["C", "G"] }
+    },
+    {
+      "sheet_name": "髪質改善カラー",
+      "header_row": 3,
+      "category": "hair_quality_color",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O", "Q"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "1000pv超えスタイルタイトル(メンズ) ",
+      "header_row": 1,
+      "category": "top_titles_mens",
+      "audiences": ["mens"],
+      "kind": "top_titles",
+      "columns": { "title": "A", "comment": "B", "length": "D", "menu": "E", "hashtags": ["F"], "ignore": ["C", "G"] }
+    },
+    {
+      "sheet_name": "髪質改善",
+      "header_row": 3,
+      "category": "hair_quality",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ショート・ボブ",
+      "header_row": 3,
+      "category": "short_bob",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ワンカラー",
+      "header_row": 3,
+      "category": "one_color",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O", "Q", "S", "U", "W", "Y"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "インナーイヤリングカラー",
+      "header_row": 3,
+      "category": "inner_earring_color",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O", "Q", "S", "U"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ブリーチカラー",
+      "header_row": 3,
+      "category": "bleach_color",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O", "Q", "S", "U", "W", "Y"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ブリーチなし(グレージュ・ベージュメイン)",
+      "header_row": 3,
+      "category": "no_bleach_color",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "韓国風スタイル",
+      "header_row": 3,
+      "category": "korean_style",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ハイライト(白髪染め白髪ぼかし)",
+      "header_row": 3,
+      "category": "highlight_gray",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "ハイライト(若め)",
+      "header_row": 3,
+      "category": "highlight_young",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "エクステ",
+      "header_row": 3,
+      "category": "extensions",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "パーマ",
+      "header_row": 3,
+      "category": "perm",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M", "O"], "ignore": ["A", "E"] }
+    },
+    {
+      "sheet_name": "メンズ",
+      "header_row": 3,
+      "category": "mens",
+      "audiences": ["mens"],
+      "kind": "category",
+      "columns": { "group": "A", "title": "C", "menu": "D", "comment": "E", "hashtags": ["H", "J", "L", "N"], "ignore": ["B", "F"] }
+    },
+    {
+      "sheet_name": "ヘアセット",
+      "header_row": 3,
+      "category": "hair_set",
+      "audiences": ["ladies"],
+      "kind": "category",
+      "columns": { "title": "B", "menu": "C", "comment": "D", "hashtags": ["G", "I", "K", "M"], "ignore": ["A", "E"] }
+    }
+  ]
+}

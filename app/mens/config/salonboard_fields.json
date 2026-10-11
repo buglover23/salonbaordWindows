@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "verified_at": null,
+  "adapter_version": null,
+  "allowed_origins": [],
+  "posting_routes": {
+    "style": {
+      "mens": {
+        "entry_url": null,
+        "adapter_id": null,
+        "page_profile_id": null
+      },
+      "ladies": {
+        "entry_url": null,
+        "adapter_id": null,
+        "page_profile_id": null
+      }
+    },
+    "blog": {
+      "mens": {
+        "entry_url": null,
+        "adapter_id": null,
+        "page_profile_id": null
+      },
+      "ladies": {
+        "entry_url": null,
+        "adapter_id": null,
+        "page_profile_id": null
+      }
+    }
+  },
+  "pages": {}
+}

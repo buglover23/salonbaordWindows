@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Tokyo",
+  "business_hours": null,
+  "post_start": "10:00",
+  "post_end": "21:00",
+  "style_posts_per_day": 10,
+  "blog_posts_per_day": 10,
+  "active_weekdays": [1, 2, 3, 4, 5, 6, 7],
+  "closed_dates": [],
+  "distribution": "interleaved_even",
+  "missed_slot_policy": "skip",
+  "slot_grace_minutes": 10
+}

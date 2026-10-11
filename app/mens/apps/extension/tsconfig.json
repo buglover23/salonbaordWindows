@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2024",
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "types": ["chrome"]
+  },
+  "include": ["src/**/*.ts", "../../src/shared/protocol/**/*.ts", "../../tests/unit/extension/**/*.ts"],
+  "exclude": []
+}

@@ -1,0 +1,51 @@
+body {
+  width: 320px;
+  margin: 12px;
+  font: 14px/1.5 system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+}
+h1 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+button {
+  padding: 4px 10px;
+}
+input {
+  width: 9em;
+}
+.warning {
+  color: #b00020;
+}
+h2 {
+  font-size: 14px;
+  margin: 12px 0 4px;
+}
+#survey label,
+#probe label {
+  display: block;
+  margin-top: 4px;
+}
+input[type='checkbox'] {
+  width: auto;
+}
+#known-title {
+  width: 100%;
+  box-sizing: border-box;
+}
+#probe {
+  margin-top: 12px;
+}
+p {
+  margin: 4px 0;
+}
+ul {
+  margin: 4px 0;
+  padding-left: 18px;
+}

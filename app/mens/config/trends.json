@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "refresh_hours": 24,
+  "cache_ttl_hours": 72,
+  "fallback": "manual_and_template",
+  "locale": "ja-JP",
+  "region": "JP",
+  "sources": [],
+  "trend_words": [],
+  "trend_colors": [],
+  "trend_styles": [],
+  "season_words": [],
+  "web_search": { "enabled": true }
+}

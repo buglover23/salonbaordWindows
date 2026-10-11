@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "mode": "dry_run",
+  "timezone": "Asia/Tokyo",
+  "data_root": ".",
+  "server": {
+    "host": "127.0.0.1",
+    "port": 3001,
+    "allowed_extension_ids": ["pfklebcmlgmehhghcphcdifbjelndlle"],
+    "token_env": "LOCAL_API_TOKEN"
+  },
+  "queue": {
+    "concurrency": 1,
+    "heartbeat_seconds": 30,
+    "min_submit_interval_seconds": 30
+  },
+  "ai": {
+    "provider": "gemini",
+    "gemini": {
+      "api_key_env": "GEMINI_API_KEY",
+      "models": {
+        "analysis": "gemini-3.8-flash",
+        "generation": "gemini-3.8-flash",
+        "check": "gemini-3.5-flash-lite"
+      },
+      "fallback_models": {
+        "analysis": ["gemini-3.6-flash", "gemini-3.5-flash"],
+        "generation": ["gemini-3.6-flash", "gemini-3.5-flash"],
+        "check": ["gemini-3.5-flash"]
+      },
+      "thinking": {
+        "analysis": "low",
+        "generation": "medium",
+        "check": "low"
+      },
+      "max_output_tokens": {
+        "analysis": 8192,
+        "generation": 16384,
+        "check": 8192
+      },
+      "free_tier": true,
+      "limits": {
+        "gemini-3.8-flash": {
+          "rpm": 5,
+          "rpd": 100,
+          "verified_at": null
+        },
+        "gemini-3.5-flash-lite": {
+          "rpm": 10,
+          "rpd": 200,
+          "verified_at": null
+        },
+        "gemini-3.6-flash": {
+          "rpm": 5,
+          "rpd": 100,
+          "verified_at": null
+        },
+        "gemini-3.5-flash": {
+          "rpm": 5,
+          "rpd": 100,
+          "verified_at": null
+        }
+      },
+      "pricing": {}
+    },
+    "anthropic": {
+      "api_key_env": "ANTHROPIC_API_KEY",
+      "models": {
+        "analysis": "claude-opus-5-5",
+        "generation": "claude-opus-5-5",
+        "check": "claude-opus-5-5"
+      },
+      "effort": {
+        "analysis": "low",
+        "generation": "medium",
+        "check": "low"
+      },
+      "refusal_fallback": true,
+      "pricing": {
+        "claude-opus-5-5": {
+          "input_per_mtok": 4,
+          "output_per_mtok": 20,
+          "cache_read_per_mtok": 0.2,
+          "verified_at": "2026-10-04"
+        },
+        "claude-opus-5": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25,
+          "cache_read_per_mtok": 0.5,
+          "verified_at": "2026-10-06"
+        },
+        "claude-opus-4-8": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25,
+          "cache_read_per_mtok": 0.5,
+          "verified_at": "2026-10-06"
+        }
+      }
+    },
+    "consistency_check": "final_only",
+    "dry_run_use_real_ai": false,
+    "budget": {
+      "daily_usd": 3,
+      "monthly_usd": 60
+    },
+    "timeout_seconds": 90,
+    "max_transport_retries": 2,
+    "max_regenerations": 2,
+    "min_required_attribute_confidence": 0.8,
+    "daily_request_limit": 200
+  },
+  "retry": {
+    "enabled": true,
+    "max_retries": 3,
+    "delays_seconds": [30, 180, 600],
+    "jitter_ratio": 0.2,
+    "respect_post_window": true
+  },
+  "duplicates": {
+    "recent_posts": 100,
+    "title_similarity_threshold": 0.85,
+    "body_similarity_threshold": 0.9,
+    "allow_same_image_across_types": true
+  },
+  "retention": {
+    "enabled": true,
+    "posted_data_days": 30,
+    "cleanup_interval_hours": 24,
+    "cleanup_batch_size": 20,
+    "keep_dedupe_records": true,
+    "cache_max_mb": 512,
+    "backup_max_mb": 1024,
+    "backup_retention_days": 30
+  },
+  "resources": {
+    "ai_concurrency": 1,
+    "image_concurrency": 1,
+    "max_prepared_jobs": 40,
+    "intake_batch_size": 100,
+    "max_input_file_mb": 25,
+    "max_input_pixels": 40000000,
+    "min_free_disk_mb": 2048,
+    "memory_soft_limit_mb": 1024,
+    "max_log_total_mb": 512
+  },
+  "launcher": {
+    "open_chrome": true,
+    "chrome_path": null,
+    "chrome_profile_directory": null,
+    "restart_limit": 3,
+    "restart_window_minutes": 30
+  },
+  "logs": {
+    "level": "info",
+    "retention_days": 30,
+    "max_file_mb": 20,
+    "save_failure_screenshots": false
+  }
+}

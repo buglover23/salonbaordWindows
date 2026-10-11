@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "salon_id": "salon",
+  "poster_name": "スタイリスト名",
+  "expected_account_label": null,
+  "staff_option_value": null,
+  "location_keywords": [],
+  "target_audiences": [],
+  "strengths": [],
+  "verified_menus": [],
+  "service_claims": {
+    "hair_consulting": true,
+    "formal_skeletal_diagnosis": false
+  },
+  "style_defaults": {
+    "image_count": 1,
+    "feature": "none",
+    "apply_image": false,
+    "model_information": "none",
+    "auto_select_coupon": false
+  }
+}

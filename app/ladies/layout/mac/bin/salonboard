@@ -1,0 +1,96 @@
+#!/bin/bash
+# salonboard: the SALON BOARD auto poster's commands from any folder on the Mac (the top 起動.command puts this bin
+# folder on PATH). Runs each copy's own `node dist/src/cli.js <command>` with the Node.js the top 起動.command set up.
+set -u
+
+SOURCE="${BASH_SOURCE[0]}"
+while [ -L "$SOURCE" ]; do
+  LINK_DIR="$(cd -P "$(dirname "$SOURCE")" && pwd)"
+  SOURCE="$(readlink "$SOURCE")"
+  case "$SOURCE" in /*) ;; *) SOURCE="$LINK_DIR/$SOURCE" ;; esac
+done
+ROOT="$(cd -P "$(dirname "$SOURCE")/.." && pwd)" || exit 2
+if [ -x "$ROOT/.runtime/node/bin/node" ]; then export PATH="$ROOT/.runtime/node/bin:$PATH"; fi
+
+usage() {
+  cat << 'EOF'
+使い方:
+  salonboard start                 メンズとレディースを起動します（起動.command と同じ）
+  salonboard status                メンズとレディースの状態を表示します
+  salonboard mens <コマンド>       メンズのツールでコマンドを実行します
+  salonboard ladies <コマンド>     レディースのツールでコマンドを実行します
+  salonboard help                  この説明を表示します
+
+よく使うコマンド（mens / ladies の後に書きます）:
+  status     状態の確認
+  pause      投稿を一時停止（例: salonboard mens pause --reason "休業日"）
+  resume     一時停止の解除
+  retry      失敗した投稿のやり直し（例: salonboard ladies retry --id <番号>）
+  redraft    文章の作り直し
+  reconcile  送信結果の照合
+  pair       拡張機能の接続コードを出す
+  trends:web トレンド語の更新
+  live:single / ai:test などの npm run のコマンドも、同じ名前で使えます。
+
+画面に「npm run ○○ -- …」と出たときは、salonboard mens ○○ … のように書き換えて実行できます。
+EOF
+}
+
+label() {
+  case "$1" in mens) echo "メンズ" ;; ladies) echo "レディース" ;; *) echo "$1" ;; esac
+}
+
+# $1 = copy, the rest = the tool's command and its arguments.
+run_cli() {
+  local copy="$1" dir="$ROOT/app/$1"
+  shift
+  if [ ! -f "$dir/dist/src/cli.js" ]; then
+    echo "$(label "$copy")のツールが準備できていません（${dir}）。先に salonboard start（または 起動.command）を実行してください。" >&2
+    return 2
+  fi
+  if ! command -v node > /dev/null 2>&1; then
+    echo "Node.js が見つかりません。先に salonboard start（または 起動.command）を実行してください。" >&2
+    return 2
+  fi
+  (cd "$dir" && node dist/src/cli.js "$@")
+}
+
+COMMAND="${1:-help}"
+[ $# -gt 0 ] && shift
+case "$COMMAND" in
+  start)
+    exec /bin/bash "$ROOT/起動.command"
+    ;;
+  status)
+    CODE=0
+    for COPY in mens ladies; do
+      echo "===== $(label "$COPY") ====="
+      run_cli "$COPY" status || CODE=$?
+      echo
+    done
+    exit "$CODE"
+    ;;
+  mens | ladies)
+    if [ $# -eq 0 ]; then
+      usage
+      exit 1
+    fi
+    SUB="$1"
+    shift
+    # As typed after `npm run <script> --`: the separator is not the tool's argument.
+    if [ "${1:-}" = "--" ]; then shift; fi
+    case "$SUB" in
+      launch) exec /bin/bash "$ROOT/app/$COMMAND/起動.command" ;;
+      build | build:extension) (cd "$ROOT/app/$COMMAND" && npm run "$SUB") ;;
+      *) run_cli "$COMMAND" "$SUB" "$@" ;;
+    esac
+    ;;
+  help | -h | --help)
+    usage
+    ;;
+  *)
+    echo "知らないコマンドです: $COMMAND" >&2
+    usage
+    exit 1
+    ;;
+esac
